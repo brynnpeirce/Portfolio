@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <!--HEAD-->
+
+    <head>
+        <link rel="shortcut icon" type="image/png" href="/Portfolio_website/favicon.png">
+        <link rel="stylesheet" href="portfolio.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"/>
+        <title>Brynn Jackson Peirce</title>
+    </head>
+
+    <!--END HEAD-->
+
+    <!--BODY-->
+    <body class="Background">
+
+        <!--NAVBAR-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+        <!--END NAVBAR-->
+
+        <!--breaks inserted to add space between navbar and the first heading.-->
+        <br>
+        <br>
+
+        <!--BACKGROUND VIDEO-->
+        <div id="Home">
+            <video autoplay muted loop id="Flower_video">
+                <source src=".//video.mp4" type="video/mp4">
+                <!--display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--VIDEO TEXT--->
+        <div class="Video_Text">
+            <h1 class="white-text">Brynn Peirce's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>In some ways, programming is like painting. You start with <br> 
+                        a blank canvas and certain raw materials. You use a combination<br>
+                         of science, art, and craft to determine what to do with them.
+                    </q>
+                    <br> - Andrew Hunt
+                    <br>
+                    <br>Welcome to my portfolio website. On it, I will tell
+                    you about my background and experience.
+                    <br>
+                    <br>Thank you for stopping by and enjoy!
+                </p>
+            </strong>
+        </div>
+
+        <!--END VIDEO TEXT-->
+
+        <!--ABOUT SECTION-->
+
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="climbing.jpg" alt="image not found">
+            </div>
+            <!--right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    
+                    My name is Brynn Perice, I'm 23 years old and I am a software developer. I have found a lot of confidence and enjoyment in coding!  
+                    <br> I am a graduate of <a href="https://www.learncodinganywhere.com"
+                    target="_blank">The Tech Academy</a>'s Software Developer Boot Camp,
+                    and trained and experienced in the following web and programming languages:
+                    HTML, CSS, JavaScript, SQL, C# and more!
+                    <br>
+                    <br>I am a full-stack developer and would love to work with
+                    you on your project.<a href="#Contact"> Contact</a> me below!
+                </p>
+            </div>
+        </div>
+        <!--END ABOUT SECTION-->
+
+        <!--GITHUB SECTION-->
+
+        <div class="Row" id="GitHub">
+            <!--left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/brynnpeirce" target="_blank"
+                    >Brynn Peirce's Github</a></p>
+                </p>
+            </div>
+            <!--right column-->
+            <div class="Column_2">
+                <a href="https://github.com/the-tech-academy" target="_blank">
+                    <img src="GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--END GITHUB SECTION-->
+
+        <!--CONTACT SECTION--->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="contact.jpg" alt="contact_image"> 
+            </div>
+            <!--contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to sent the form data; 
+                    we are leaving it blank-->
+                <form action="https://formspree.io/f/xzboknnk" method="POST"> <!--Here we are utilizing a 3rd party
+                service to submit the contact form data, intert your formspree endpoint in the action attribute-->
+
+                <label>Name:</label>
+                    <input type="text" placeholder="Please enter your name here">
+                <label>Email:</label>
+                    <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                <label>Message:</label>
+                    <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                    <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+        <!--END CONTACT SECTION-->
+
+        <!--FOOTER SECTION-->
+        <footer>
+            <p>
+                <p class="center">&copy;Prosper Consulting Inc.,<a href="https://www.learncodinganywhere.com/" 
+                    target="_blank">The Tech Academy</a></p>
+            </p>
+        </footer>
+    </body>
+</html>
