@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <!--HEAD-->
+
+    <head>
+        <link rel="shortcut icon" type="image/png" href="/Portfolio_website/favicon.png">
+        <link rel="stylesheet" href="portfolio.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"/>
+        <title>Brynn Jackson Peirce</title>
+    </head>
+
+    <!--END HEAD-->
+
+    <!--BODY-->
+    <body class="Background">
+
+        <!--NAVBAR-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#slideshow">About Me</a>
+            <a href="#experience">My Experience</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <!--END NAVBAR-->
+
+        <!--breaks inserted to add space between navbar and the first heading.-->
+        <br>
+        <br>
+
+        <!--BACKGROUND VIDEO-->
+        <div id="Home">
+            <video autoplay muted loop id="Flower_video">
+                <source src=".//video.mp4" type="video/mp4">
+                <!--display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--VIDEO TEXT--->
+        <div class="Video_Text">
+            <h1 class="white-text">Brynn Peirce's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>In some ways, programming is like painting. You start with <br> 
+                        a blank canvas and certain raw materials. You use a combination<br>
+                         of science, art, and craft to determine what to do with them.
+                    </q>
+                    <br> - Andrew Hunt
+                    <br>
+                    <br>Welcome to my portfolio website. On it, I will tell
+                    you about my background and experience.
+                    <br>
+                    <br>Thank you for stopping by and enjoy!
+                </p>
+            </strong>
+        </div>
+
+        <!--END VIDEO TEXT-->
+
+        <!--Meet me section-->
+        <div id="slideshow">
+            <div id="slideshow_background">
+                <div id="slideshow_container">
+                    <!--Slide 1 of 5-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images"
+                        src="me.JPG" alt="Picture of me">
+                            <div class="text">My name is Brynn Peirce and I am 23 years old. Click through the slideshow
+                                to learn a little more about me!
+                            </div>
+                    </div>
+                    <!--Slide 2 of 5-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images"
+                        src="guam.jpg" alt="guam">
+                        <div class="text">I am great under pressure. After college I nannied 3 kids in Guam from time to time.
+                            At one point Guam annouced that they were going to be hit by a typhoon. I prepped myself, the kids and 
+                            the house to be hit. Afterwards we lost power and weren't able to leave the house. We spent the next couple
+                            of days using the generator to power 1 light, 1 fan, and the refrigerator. Everyone was safe and I survived my 
+                            first typhoon while taking care of 3 kids!
+                        </div>
+                    </div>
+                    <!--slide 3 of 5-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images"
+                        src="covid.jpg" alt="CNA">
+                        <div class="text">I'm resiliant. In 2019 I became a Certified Nurse Assistant and in 2020, I worked as a CNA through Covid-19</div>
+                    </div>
+                    <!--slide 4 of 5-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images"
+                        src="school.jpg" alt="school">
+                        <div class="text">I am flexible. In 2020, I got a job working for an elementary school as a CNA. The school system
+                            during the pandemic taught me to be flexible. I learned and adapted to working in Special Education for those kids
+                            who were medically frigile. 
+                        </div>
+                    </div>
+                    <!--slide 5 of 5 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images"
+                        src="run.jpg" alt="coding">
+                        <div class="text">So why coding? I love to challenge myself and I want to grow. I believe there are so many opportunities 
+                            as a Software Developer. Contact me now, I am avaliable to assist you on your project!
+                        </div>
+                    </div>
+                    <!--Previous and Next buttons-->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!--space between the slideshow images and the dots-->
+
+                <!--Slide show dots...another way to navigate-->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>   
+        </div>
+
+        <!--end meet me section-->
+
+        <!--Experience SECTION-->
+
+        <div class="Row" id="experience">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="climbing.jpg" alt="image not found">
+            </div>
+            <!--right column-->
+            <div class="Column_1">
+                <h1>My experience</h1>
+                <p>
+                    
+                    I am a software developer. I have found a lot of confidence and enjoyment in coding!  
+                     I am a graduate of <a href="https://www.learncodinganywhere.com"
+                    target="_blank">The Tech Academy</a>'s Software Developer Boot Camp,
+                    and trained and experienced in the following web and programming languages:
+                    HTML, CSS, JavaScript, SQL, C# and more! I am a full-stack developer and would love to work with
+                    you on your project.<a href="#Contact"> Contact</a> me below!
+                </p>
+            </div>
+        </div>
+        <!--END Experience SECTION-->
+
+        <!--GITHUB SECTION-->
+
+        <div class="Row" id="GitHub">
+            <!--left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/brynnpeirce" target="_blank"
+                    >Brynn Peirce's Github</a></p>
+                </p>
+            </div>
+            <!--right column-->
+            <div class="Column_2">
+                <a href="https://github.com/brynnpeirce" target="_blank">
+                    <img src="GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--END GITHUB SECTION-->
+
+        <!--CONTACT SECTION--->
+        <div id="contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/f/xzboknnk" method="POST" class="form-contaier">
+                    <h1>CONTACT</h1>
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="John" name="name" required>
+                    <label for="phone"><b>Phone Number</b></label>
+                    <input type="text" placeholder="(123) 456-789" name="phone">
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="@gmail.com" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                    <input type="text" placeholder="Type your message here" name="message">
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+        <!--END CONTACT SECTION-->
+
+        <!--FOOTER SECTION-->
+        <footer>
+            <p>
+                <p class="center">&copy;Prosper Consulting Inc.,<a href="https://www.learncodinganywhere.com/" 
+                    target="_blank">The Tech Academy</a></p>
+            </p>
+        </footer>
+        <script src="portfolio.js"></script>
+    </body>
+</html>
